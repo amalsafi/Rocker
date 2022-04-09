@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Roboto:wght@100;300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --mainColor: #982929;
+    --subColor: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header-content ul {
+    list-style: none;
+}
+
+
+/* hrader */
+
+
+/* header{
+    margin-top: 10px;
+} */
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    box-shadow: 0px 2px 5px -1px #afafaf;
+    padding: 30px 80px;
+    background-color: burlywood;
+}
+
+.header-content ul li {
+    display: inline-block;
+}
+
+.header-content ul,
+.header-content ul li a {
+    color: var(--subColor);
+}
+
+.header-content nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -22px;
+}
+
+.header-content nav a {
+    padding: 33px 12px;
+    font-weight: bold;
+    position: relative;
+}
+
+.header-content nav a:hover {
+    background-color: #373533;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-content .login ul li {
+    padding: 0 5px;
+}
+
+.header-content .login .fa fa-search {
+    color: var(--subColor);
+}
+
+.fa,
+.fas {
+    color: var(--subColor);
+    font-size: 25px;
+}
+
+.header-content .login ul li:last-child i {
+    position: relative;
+    margin-right: 8px;
+}
+
+.header-content .login ul li:last-child i::after {
+    position: absolute;
+    content: "0";
+    background-color: #ff0202;
+    font-size: 14px;
+    color: white;
+    padding: 2px;
+    border-radius: 50%;
+    top: 15px;
+    left: 27px;
+}
+
+
+/***********************slider**********************/
+
+.slider {
+    /* background-image: url('Template_2_images/images/pexels-vlada-karpovich-4050284.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed; */
+    /* margin-top: 15px; */
+    text-align: center;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.slider .imgg {
+    position: relative;
+}
+
+.slider h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #982929;
+    text-shadow: 4px 1px black;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 26%;
+    left: 24%;
+}
+
+
+/*********************section2*********************************/
+
+.sec2 {
+    padding-top: 40px;
+}
+
+.sec2 div:first-child h2:first-child {
+    text-align: center;
+}
+
+.sec2 h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.sec2 span {
+    display: block;
+    width: 100px;
+    margin: auto;
+    height: 3px;
+    background-color: var(--mainColor);
+    transition: 2s;
+}
+
+.sec2 div:first-child:hover span {
+    width: 150px;
+}
+
+.sec2 .items {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px;
+    margin: 20px 0;
+}
+
+.sec2 .item {
+    overflow: hidden;
+}
+
+.sec2 .items img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sec2 .items .item:hover img {
+    transform: perspective(100px) translateZ(10px);
+    transition-duration: .5s;
+}
+
+.sec2 .items h4 {
+    color: grey;
+}
+
+.sec2 .items h3 {
+    padding-top: 10px;
+}
+
+.sec2 .items .icon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--mainColor);
+    color: white;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s;
+}
+
+.sec2 .items div {
+    position: relative;
+}
+
+.item:hover .icon {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/***************************sectin3***********************************/
+
+.sec3 {
+    margin-top: 40px;
+}
+
+.sec3 div:first-child h2:first-child {
+    text-align: center;
+}
+
+.sec3 h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.sec3 span:first-child {
+    display: block;
+    width: 100px;
+    margin: auto;
+    height: 3px;
+    background-color: var(--mainColor);
+    transition: 2s;
+}
+
+.sec3 div:first-child:hover span {
+    width: 150px;
+}
+
+.sec3 ul:first-child {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+}
+
+.sec3 li:hover {
+    color: var(--mainColor);
+    transform: perspective(10px) translate3d(0px, 0px, 2px);
+    transition-duration: .5s;
+}
+
+.sec3 .items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin: 20px 0;
+}
+
+.sec3 .item {
+    overflow: hidden;
+}
+
+.sec3 .items img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sec3 .items ul {
+    list-style: none;
+}
+
+.sec3 .item:hover .over {
+    transform: scaleX(1);
+}
+
+.sec3 .imgg {
+    position: relative;
+}
+
+.sec3 .over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: .5s;
+}
+
+.sec3 .over ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sec3 .over li {
+    width: 30px;
+    height: 30px;
+    background-color: var(--mainColor);
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.sec3 .over li i {
+    color: white;
+    line-height: 30px;
+}
+
+.sec3 .item i.active {
+    color: #ffb800;
+}
+
+.sec3 .item span {
+    display: block;
+    margin: 5px 0;
+}
+
+
+/*******************************footer*******************************/
+
+footer {
+    margin-top: 40px;
+    background-color: black;
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    padding: 80px 150px;
+}
+
+footer div:first-child {
+    padding: 30px 70px;
+}
+
+footer .icon {
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+}
+
+footer i {
+    margin-right: 10px;
+}
+
+footer ul li {
+    margin-bottom: 15px;
+    color: grey;
+}
+
+footer ul {
+    list-style: none;
+    margin-top: 40px;
+}
